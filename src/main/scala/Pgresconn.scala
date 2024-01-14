@@ -13,7 +13,7 @@ class Pgresconn {
     val metaData = resultSet.getMetaData
     val columnCount = metaData.getColumnCount
 
-    // Print column names
+
     for (i <- 1 to columnCount) {
       print(f"${metaData.getColumnName(i)}%-20s")
     }

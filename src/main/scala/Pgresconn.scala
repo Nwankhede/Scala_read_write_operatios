@@ -9,7 +9,7 @@ class Pgresconn {
     // Execute the SQL query
     val resultSet = prepSt.executeQuery(sql)
 
-    // Get metadata to retrieve column names
+
     val metaData = resultSet.getMetaData
     val columnCount = metaData.getColumnCount
 

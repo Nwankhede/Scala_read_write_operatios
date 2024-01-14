@@ -11,7 +11,6 @@ class CreateTables(schema: String, tableName: String) {
   def createSchema(): Unit = {
 
       val obj = new Pgresconn()
-      println(s"Database cbs_sys created successfully.")
       val createSchemaSQL = s"CREATE SCHEMA IF NOT EXISTS $schema"
       obj.prepSt.executeUpdate(createSchemaSQL)
 

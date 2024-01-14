@@ -11,8 +11,8 @@ object Config {
   val user = "postgres"
   val password = "Pass@1234"
   val host = "localhost"
-  val port = "3306"
-  val jdbcurl = "jdbc:postgresql://localhost:3306/TestDb?socketTimeout=600000"
+  val port = "5433"
+  val jdbcurl = "jdbc:postgresql://localhost:5433/testdb"
   val schema = "al_2048"
 
 }
